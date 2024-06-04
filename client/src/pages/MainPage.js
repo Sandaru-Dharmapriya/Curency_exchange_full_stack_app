@@ -5,16 +5,16 @@ export default function MainPage() {
     <div className='mt-5 flex items-center justify-center flex-col'>
         <h1 className=' lg:mx-32 text-5xl font-bold text-green-500'>Convert Your Currencies Today</h1>
 
-        <p>
-        "Step right into "Transform Your Currency Now"!
-        This platform offers seamless currency conversions using the most up-to-date exchange rates.
+        <p className='mt-10 text-3xl text-center text-gray-500 dark:text-gray-400' >
+        "Step right into "Transform Your Currency Now"!</p>
+
+        <p className='mt-10 text-2xl text-center text-gray-500 dark:text-gray-400'>This platform offers seamless currency conversions using the most up-to-date exchange rates.
         Whether you're plotting a journey, organizing your finances, or just intrigued by the worth 
-        of your money across various currencies, this utility is at your service."
-        </p>
+        of your money across various currencies, this utility is at your service."</p>
 
         <div>
-            <section className='w-full lg:w-1/2'>
-                <form>
+            <section className='w-full '>
+                <form className='mt-20'>
                     <div className='mb-4'>
                     <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date</label>
                      <input type="date" id="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500
