@@ -45,7 +45,18 @@ export default function MainPage() {
     }, []);
 
     return (
-        <div className='mt-5 flex items-center justify-center flex-col'>
+        
+
+        <div
+        className='mt-5 flex items-center justify-center flex-col min-h-screen' 
+        style={{ 
+            backgroundImage: `url('/Curency_exchange_full_stack_app\client\public\hundred-dollar-bills-on-wooden-floor-3d-render-illustration-money-and-dollar-bills-are-spread-out-on-the-table-ai-generated-free-photo.jpg')`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+        }}
+
+        >
             <h1 className='lg:mx-32 text-5xl font-bold text-green-500'>Convert Your Currencies Today</h1>
 
             <p className='mt-10 text-3xl text-center text-gray-500 dark:text-gray-400' >
@@ -123,14 +134,16 @@ export default function MainPage() {
                                 required
                             />
         
-                            <button className='bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-md'>
+                            <button className='mt-5 bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-md'>
                                 Get the target currency
                             </button>
                         </div>
                     </form>
                     {/* Display the converted amount */}
-                    <p>Converted Amount: {convertedAmount}</p>
-                </section>
+                    <p class="max-w-lg text-2xl font-semibold leading-loose text-gray-900 dark:text-white">
+                        {amountInSourceCurrency} {currencyNames[sourceCurrency]} is equal to {" "} 
+                        {convertedAmount} {currencyNames[targetCurrency]}
+                    </p>     </section>
             </div>
         </div>
     );
