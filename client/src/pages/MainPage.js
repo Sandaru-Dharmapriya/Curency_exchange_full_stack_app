@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 
+
+
 export default function MainPage() {
     
     // States for form fields
@@ -49,15 +51,16 @@ export default function MainPage() {
 
         <div
         className='mt-5 flex items-center justify-center flex-col min-h-screen' 
+
         style={{ 
-            backgroundImage: `url('/Curency_exchange_full_stack_app\client\public\hundred-dollar-bills-on-wooden-floor-3d-render-illustration-money-and-dollar-bills-are-spread-out-on-the-table-ai-generated-free-photo.jpg')`, 
+            backgroundImage: `url('/2.jpg')`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
         }}
-
+    
         >
-            <h1 className='lg:mx-32 text-5xl font-bold text-green-500'>Convert Your Currencies Today</h1>
+            <h1 className='lg:mx-32 text-5xl font-bold text-green-700 '>Convert Your Currencies Today</h1>
 
             <p className='mt-10 text-3xl text-center text-gray-500 dark:text-gray-400' >
                 "Step right into "Transform Your Currency Now"!</p>
@@ -70,6 +73,9 @@ export default function MainPage() {
                 <section className='w-full lg:w-99'>
                     <form onSubmit={handleSubmit} >
                         <div className="mb-4">
+
+                            
+
                             <label htmlFor={date} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date</label>
                             <input 
                                 onChange={(e) => setDate(e.target.value)}
